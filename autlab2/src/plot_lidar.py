@@ -17,7 +17,7 @@ def plot_xy(msg):
   plt.axis("equal")
   plt.draw()
   plt.pause(0.001)
-  plt.hold(False)
+  plt.clf
 
    
 if __name__ == '__main__':
