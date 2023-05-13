@@ -75,7 +75,7 @@ def pcl2ros(pcl_array):
         g = (pack & 0x0000FF00) >> 8
         b = (pack & 0x000000FF)
         buffer.append(struct.pack('ffffBBBBIII', data[0], data[1], data[2], 1.0, b, g, r, 0, 0, 0, 0))
-    ros_msg.data = "".join(buffer)
+    ros_msg.data = b"".join(buffer)
     return ros_msg
 
 
